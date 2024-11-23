@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+#hesap-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    color: white;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    
+}
+
+
+.hesap-card{
+    font-family: "Poppins", serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    min-width: 210px;
+    width: 25%;
+    min-height: 550px;
+    max-height: fit-content;
+    color: white;
+    padding: 15px;
+    backdrop-filter: blur(20px);
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .5);
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+#turuncuOzImg,
+#maviOzImg{
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    height: auto;
+
+}
+
+.accounts-start{
+    color: rgb(0, 214, 214);
+}
+
+.accounts-mid{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.accounts-end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.accounts-mid ul{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (max-width: 1160px){
+
+    #hesap-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hesap-card{
+        margin: 0;
+        margin-bottom: 10px;
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+
+    .hesap-card{
+        margin-right: 0;
+    }
+}

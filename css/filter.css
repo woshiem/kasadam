@@ -1,0 +1,104 @@
+.filter {
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    backdrop-filter: blur(20px);
+    background: transparent;
+    border: none;
+    box-shadow: 0 0 50px rgb(124, 104, 255);
+    width: 270px;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 60px;
+    margin-left: 30px;
+    
+    
+}
+
+.filter h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+
+.filter label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.filter select, 
+.filter input[type="text"],
+.filter input[type="number"] {
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: hsl(285, 75%, 15%);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filter button {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(285, 75%, 15%);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.filter button:hover {
+    background-color: hsl(285, 100%, 6%);
+}
+
+aside .filter .skins[type="text"],
+aside .filter input[type="number"]{
+   cursor: auto;
+   
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#skins{
+    cursor: auto;
+}
+
+.no-results-message {
+    text-align: center;
+    color: #ffffff; /* Renkli bir görünüm için kırmızımsı ton */
+    font-size: 1.2rem; /* Yazı boyutu */
+    font-weight: bold;
+    padding: 20px;
+    backdrop-filter:  blur(7px);
+    border: 1px solid rgb(124, 104, 255); /* Kenar çizgisi */
+    border-radius: 10px; /* Kenarları yuvarlama */
+    width: 80%; /* Mesaj genişliği */
+    margin: 20px auto; /* Ortalamak için */
+    max-width: 400px; /* Maksimum genişlik */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+}
+
+@media only screen and (max-width: 1160px){
+
+    .filter{
+        margin: 0;
+        margin-top: 50px;
+    }
+}
